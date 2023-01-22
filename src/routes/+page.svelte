@@ -1,4 +1,6 @@
 <script lang="ts">
+	import MdPersonOutline from 'svelte-icons/md/MdPersonOutline.svelte';
+	import MdLaptop from 'svelte-icons/md/MdLaptop.svelte';
 	import headshot from '$lib/images/evan-professional-headshot.jpeg';
 	import RecentProject from '$lib/RecentProject.svelte';
 </script>
@@ -12,7 +14,16 @@
 	<img class="max-w-[300px] rounded-full" src={headshot} alt="Evan Brooks headshot" />
 	<div class="space-y-4">
 		<h1 class="text-3xl text-center">Nice to meet you!</h1>
-		<p>I'm Evan Brooks, a software engineer with passion for both people and code.</p>
+		<p>
+			I'm Evan Brooks, a software engineer with passion for both people
+			<span class="w-4 h-4 inline-block align-middle">
+				<MdPersonOutline />
+			</span>
+			and code
+			<span class="w-4 h-4 inline-block align-middle">
+				<MdLaptop />
+			</span>
+		</p>
 	</div>
 </section>
 

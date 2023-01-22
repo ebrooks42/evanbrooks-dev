@@ -38,6 +38,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/sofia-sans": "^4.5.1",
-		"classnames": "^2.3.2"
+		"classnames": "^2.3.2",
+		"svelte-icons": "^2.1.0"
 	}
 }
