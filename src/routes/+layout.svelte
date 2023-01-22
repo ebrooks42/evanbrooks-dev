@@ -6,14 +6,20 @@
 	let year = new Date().getFullYear();
 </script>
 
-<div class="bg-slate-100 min-h-screen">
-	<Header />
+<Header />
 
-	<main class="mb-[56px] pb-2">
-		<slot />
-	</main>
+<main class="main-container container mx-auto max-w-screen-lg">
+	<slot />
+</main>
 
-	<footer class="fixed inset-x-0 bottom-0 w-full text-center p-4 bg-slate-200">
-		<p>© {year} Evan Brooks</p>
-	</footer>
-</div>
+<footer class="fixed inset-x-0 bottom-0 w-full text-center p-4 bg-slate-200">
+	<p>© {year} Evan Brooks</p>
+</footer>
+
+<style>
+	.main-container {
+		margin-top: theme('margin.4');
+		/* Bottom margin takes into account height of footer. */
+		margin-bottom: calc(56px + theme('margin.4'));
+	}
+</style>
