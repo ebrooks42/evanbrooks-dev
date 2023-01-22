@@ -12,7 +12,7 @@
 </script>
 
 <header>
-	<nav class="shadow-sm ">
+	<nav class="shadow-sm bg-slate-200">
 		<ul class="flex flex-row justify-center space-x-4">
 			{#each pageLinks as pageLink}
 				<li

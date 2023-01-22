@@ -5,7 +5,7 @@
 	let year = new Date().getFullYear();
 </script>
 
-<div class="bg-gradient-to-b from-white to-slate-200 min-h-screen">
+<div class="bg-slate-100 min-h-screen">
 	<Header />
 
 	<main class="mb-[56px] pb-2">
