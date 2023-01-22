@@ -1,4 +1,5 @@
 <script>
+	import '@fontsource/sofia-sans';
 	import Header from './Header.svelte';
 	import '../app.css';
 
