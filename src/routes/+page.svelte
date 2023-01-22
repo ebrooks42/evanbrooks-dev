@@ -43,16 +43,8 @@
 		<li>
 			<RecentProject
 				title="evanbrooks.dev"
-				href="https://www.google.com/"
-				technologies={[
-					'Typescript',
-					'React',
-					'NextJS',
-					'Tailwind CSS',
-					'Google Business APIs',
-					'Sendgrid Email APIs',
-					'Github'
-				]}
+				href="https://www.evanbrooks.dev/"
+				technologies={['Typescript', 'Svelte', 'SvelteKit', 'Tailwind CSS', 'Vercel']}
 			>
 				<p>
 					This site! Working with Svelte & SvelteKit for the first time to build a personal site has
