@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Link from '$lib/Link.svelte';
 	const posts = [
 		{
 			slug: 'learning-federated-id',
@@ -16,11 +17,10 @@
 
 <ul>
 	{#each posts as post}
-		<li class="shadow-md rounded-lg p-4 transition duration-300 hover:shadow-lg hover:bg-slate-200">
-			<a href="/lessons/{post.slug}" class="space-y-4">
-				<h2 class="text-xl">{post.title}</h2>
-				<p>{post.summary}</p>
-			</a>
+		<li class="shadow-md rounded-lg p-6 space-y-4">
+			<h2 class="text-xl"><Link href="/lessons/{post.slug}">{post.title}</Link></h2>
+			<p>{post.summary}</p>
+			<Link href="/lessons/{post.slug}" class="block">Read more</Link>
 		</li>
 	{/each}
 </ul>

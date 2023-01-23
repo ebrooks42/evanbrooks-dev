@@ -8,7 +8,7 @@
 
 <Header />
 
-<main class="main-container container mx-auto px-16 max-w-screen-lg space-y-4">
+<main class="main-container container mx-auto px-8 sm:px-16 max-w-screen-lg space-y-4">
 	<slot />
 </main>
 
