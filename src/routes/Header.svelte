@@ -39,15 +39,21 @@
 </header>
 
 <style>
-	li[aria-current='page']::before {
+	li::before {
 		--size: 6px;
 		content: '';
 		width: 0;
 		height: 0;
 		position: absolute;
 		top: 0;
+		opacity: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
 		border-top: var(--size) solid theme('colors.purple.800');
+		transition: opacity 150ms ease;
+	}
+
+	li[aria-current='page']::before {
+		opacity: 100;
 	}
 </style>
