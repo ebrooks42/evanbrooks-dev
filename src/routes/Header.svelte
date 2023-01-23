@@ -7,6 +7,11 @@
 			pathname: '/',
 			name: 'Home',
 			active: $page.url.pathname === '/'
+		},
+		{
+			pathname: '/lessons',
+			name: 'Lessons Learned',
+			active: $page.url.pathname.startsWith('/lessons')
 		}
 	];
 </script>

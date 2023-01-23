@@ -3,6 +3,7 @@
 	import MdLaptop from 'svelte-icons/md/MdLaptop.svelte';
 	import headshot from '$lib/images/evan-professional-headshot.jpeg';
 	import RecentProject from '$lib/RecentProject.svelte';
+	import Link from '$lib/Link.svelte';
 </script>
 
 <svelte:head>
@@ -10,24 +11,28 @@
 	<meta name="description" content="Evan Brooks' personal site" />
 </svelte:head>
 
-<section class="grid grid-cols-1 sm:grid-cols-2 place-items-center space-x-4 space-y-4 m-8">
+<section class="grid grid-cols-1 md:grid-cols-2 place-items-center space-y-4 my-8">
 	<img class="max-w-[300px] rounded-full" src={headshot} alt="Evan Brooks headshot" />
 	<div class="space-y-4">
 		<h1 class="text-3xl text-center">Nice to meet you!</h1>
 		<p>
-			I'm Evan Brooks, a software engineer with passion for both people
+			I'm Evan Brooks, a software engineer with passion for both
 			<span class="w-4 h-4 inline-block align-middle">
 				<MdPersonOutline />
 			</span>
-			and code
+			people and
 			<span class="w-4 h-4 inline-block align-middle">
 				<MdLaptop />
 			</span>
+			code. Some of my recent (non-corporate) work is below. If you want to see what I've been learning
+			lately, check out my
+			<Link href="/lessons">lessons learned</Link>.
 		</p>
+		<p />
 	</div>
 </section>
 
-<section class="mx-8">
+<section>
 	<h2 class="text-center text-2xl">What I've been working on</h2>
 	<ul class="space-y-4">
 		<li>

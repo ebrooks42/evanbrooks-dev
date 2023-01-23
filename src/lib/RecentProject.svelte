@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ExternalLink from './ExternalLink.svelte';
+	import ExternalLink from './Link.svelte';
 	import TechStack from './TechStack.svelte';
 
 	export let title: string;
